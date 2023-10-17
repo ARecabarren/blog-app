@@ -1,24 +1,22 @@
-# README
+# Getting started with rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+-This is a blog application built using Ruby on Rails. 
 
-Things you may want to cover:
+-The application allows users to create, read, update, and delete articles, as well as add comments to each article. 
 
-* Ruby version
+-The application also includes a simple authentication system for creating user accounts and logging in.
 
-* System dependencies
+### To use this application, open a terminal, navigate to a directory where you have rights to create files, and run:
 
-* Configuration
+`$ rails new blog`
 
-* Database creation
+This will create a Rails application called Blog in a blog directory and install the gem dependencies that are already mentioned in the Gemfile using bundle install. You can see all of the command line options that the Rails application generator accepts by running rails new --help. 
 
-* Database initialization
+### After you create the blog application, switch to its folder:
+`$ cd blog`
+The blog directory will have a number of generated files and folders that make up the structure of a Rails application.
 
-* How to run the test suite
+### To start the application, run:
+`$ rails s`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This will start the server and you can access the application by navigating to <http://localhost:3000> in your web browser.
