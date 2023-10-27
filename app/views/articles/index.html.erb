@@ -13,7 +13,7 @@
                         <p class="mb-0 opacity-75"><%= article.body[0..19] %></p>
                         <%# <p class="mb-0 opacity-75">Some placeholder content in a paragraph.</p> %>
                         </div>
-                        <small class="opacity-50 text-nowrap">now</small>
+                        <small class="opacity-50 text-nowrap"><%= time_ago_in_words(article.created_at) %> ago</small>
                 </div>
                 </a>
         <% end %>
