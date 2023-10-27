@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "articles#index"
+  root "articles#landing"
 
   resources :articles do
     resources :comments
