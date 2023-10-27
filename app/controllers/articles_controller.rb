@@ -1,4 +1,8 @@
 class ArticlesController < ApplicationController
+  def landing
+    
+  end
+  
   def index
     @articles = Article.all
   end
