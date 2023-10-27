@@ -1,6 +1,8 @@
-<h1><%= @article.title %></h1>
+<div class = 'article-container'>
+  <h1 class = 'article-title'><%= @article.title %></h1>
+  <p class = 'article-body' ><%= @article.body %></p>
+</div>
 
-<p><%= @article.body %></p>
 
 <ul>
   <li><%= link_to "Edit", edit_article_path(@article) %></li>
