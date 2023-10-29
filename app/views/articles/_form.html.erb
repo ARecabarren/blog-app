@@ -1,15 +1,15 @@
 <%= form_with model: article do |form| %>
-  <div>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
+  <div class='mb-3'>
+    <%= form.label :title, class:'form-label' %><br>
+    <%= form.text_field :title, class:'form-control' %>
     <% article.errors.full_messages_for(:title).each do |message| %>
       <div><%= message %></div>
     <% end %>
   </div>
 
-  <div>
-    <%= form.label :body %><br>
-    <%= form.text_area :body %><br>
+  <div class='text-area container'>
+    <%= form.label :body, class:'form-label' %><br>
+    <%= form.text_area :body, class:'form-control', id:'body-area' %><br>
     <% article.errors.full_messages_for(:body).each do |message| %>
       <div><%= message %></div>
     <% end %>
