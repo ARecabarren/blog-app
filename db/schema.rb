@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_10_31_150705) do
+ActiveRecord::Schema[7.1].define(version: 2023_10_31_150815) do
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -31,7 +31,6 @@ ActiveRecord::Schema[7.1].define(version: 2023_10_31_150705) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "username"
-    t.string "gender"
   end
 
   add_foreign_key "comments", "articles"
